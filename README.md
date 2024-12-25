@@ -1,9 +1,8 @@
 # Q-Learning-Car
 
-[over here]
 
-<div style="display: flex; justify-content: space-around;">
-    <img src="https://raw.githubusercontent.com/angtheman3/Q-Learning-Car/main/track_image.png" alt="Average Reward" style="width: 45%;"/>
+<div style="text-align: center;">
+    <img src="https://raw.githubusercontent.com/angtheman3/Q-Learning-Car/main/track_image.png" alt="Average Reward" style="width: 80%;"/>
 </div>
 
 
