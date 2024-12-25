@@ -14,5 +14,16 @@ Throughout training, the code tracks performance metrics such as total reward pe
 
 From a technical standpoint, this project highlights how sensor information (the radars), basic physics (updating car positions and angles), and RL algorithms (Q-Learning with an ε-greedy policy) can intertwine within a single simulation. The code is intentionally modular: there is a Car class that manages each vehicle’s position, rotation, collision detection, and radar checks; a Q-Learning routine that updates Q-values; and a main loop that orchestrates rendering, event handling, and data collection. If you wish to experiment further, you could swap in a new map image, change the number of radars, try a different reward scheme, or even replace the table-based Q-Learning with a deep neural network approach.
 
+## Plot Analysis
+
+[over here]
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="path_to_reward_plot.png" alt="Average Reward" style="width: 45%;"/>
+    <img src="path_to_distance_plot.png" alt="Average Distance" style="width: 45%;"/>
+</div>
 
 
+From these two plots for Average Reward and Average Distance over the last 100 episodes we can see both cars making significant progress. Initially, both reward and distance values fluctuate widely (particularly in the very first episodes, where the orange line sometimes drops below 200 on reward and 300 on distance), reflecting the early exploratory phase. As training continues beyond a few thousand episodes, the lines for both cars steadily climb, indicating that they are learning strategies to drive farther without crashing.
+
+Car A (in blue) often stays slightly ahead of Car B in terms of both reward and distance. That difference highlights how the additional complexity in Car A’s reward function gives it a small but consistent advantage. Still, Car B’s simpler reward structure does not prevent it from improving over time; it also maintains an upward trend, just with a bit more volatility and occasionally lower peaks. By the end of training, each car’s average performance is noticeably higher than at the start, with Car A hovering around (and sometimes exceeding) 900–1000 in distance and 800–900 in average reward, and Car B not far behind.
