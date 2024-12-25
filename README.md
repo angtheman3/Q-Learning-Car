@@ -16,12 +16,11 @@ From a technical standpoint, this project highlights how sensor information (the
 
 ## Plot Analysis
 
-[over here]
-
 <div style="display: flex; justify-content: space-around;">
-    <img src="path_to_reward_plot.png" alt="Average Reward" style="width: 45%;"/>
-    <img src="path_to_distance_plot.png" alt="Average Distance" style="width: 45%;"/>
+    <img src="https://raw.githubusercontent.com/angtheman3/Q-Learning-Car/main/avg_reward.png" alt="Average Reward" style="width: 45%;"/>
+    <img src="https://raw.githubusercontent.com/angtheman3/Q-Learning-Car/main/avg_distance.png" alt="Average Distance" style="width: 45%;"/>
 </div>
+
 
 
 From these two plots for Average Reward and Average Distance over the last 100 episodes we can see both cars making significant progress. Initially, both reward and distance values fluctuate widely (particularly in the very first episodes, where the orange line sometimes drops below 200 on reward and 300 on distance), reflecting the early exploratory phase. As training continues beyond a few thousand episodes, the lines for both cars steadily climb, indicating that they are learning strategies to drive farther without crashing.
