@@ -1,5 +1,12 @@
 # Q-Learning-Car
 
+[over here]
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="https://raw.githubusercontent.com/angtheman3/Q-Learning-Car/main/track_image.png" alt="Average Reward" style="width: 45%;"/>
+</div>
+
+
 This project demonstrates how two autonomous cars can learn to navigate an oval racetrack using a reinforcement learning approach. The core idea is to have each car, via a Q-Learning algorithm, attempt to maximize its own progress without crashing. Over the course of many simulated episodes, the cars refine their policies, adjusting their steering and throttle in ways that allow them to stay on the track longer and accumulate more reward.
 
 What makes this setup particularly engaging is that the two cars follow slightly different reward structures. Car A uses a more nuanced “complex” scheme that includes progress incentives and penalties, while the other Car B uses a comparatively “simple” reward function focused on overall distance traveled. By running both cars in parallel on the same track, it becomes easy to see how small variations in reward design can alter learning behaviors and outcomes.
